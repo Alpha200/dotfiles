@@ -326,3 +326,4 @@ bindsym $mod+p exec ~/.nvm/versions/node/v5.6.0/bin/node ~/PhpstormProjects/pano
 bindsym $mod+u exec ~/bin/signselection.sh
 
 exec --no-startup-id nm-applet
+exec --no-startup-id thunderbird
