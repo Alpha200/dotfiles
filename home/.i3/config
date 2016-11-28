@@ -196,12 +196,11 @@ bar {
 # Disable monitor after 120 sec idle
 exec --no-startup-id xset dpms 120
 # Start i3lock after suspend, monitor off, ...
-exec --no-startup-id xss-lock -- /home/dsendzik/Scripts/fancylock.sh & 
+exec --no-startup-id xss-lock -- i3lock-fancy -- scrot -z & 
 # Set Wallpaper
 exec --no-startup-id feh --bg-max /home/dsendzik/PhpstormProjects/panowallpaper/images/bg.jpg
 # Lock session with Win+y
 bindsym $mod+y exec sleep 0.1 && xset dpms force off
-#bindsym $mod+y exec /home/dsendzik/Scripts/fancylock.sh
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% && pkill --signal RTMIN+1 i3blocks
@@ -327,3 +326,4 @@ bindsym $mod+u exec ~/bin/signselection.sh
 
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
+exec --no-startup-id nextcloud
