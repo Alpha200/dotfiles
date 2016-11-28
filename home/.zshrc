@@ -1,6 +1,7 @@
 export GOPATH=~/.go
 export PATH="/home/dsendzik/.go/bin:$PATH"
 export PATH="/home/dsendzik/Android/Sdk/platform-tools:$PATH"
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
 source /usr/share/nvm/init-nvm.sh
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
