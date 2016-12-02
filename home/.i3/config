@@ -212,7 +212,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -319,7 +319,7 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id redshift-gtk
 
 # Wallpaper chooser
-bindsym $mod+p exec ~/.nvm/versions/node/v5.6.0/bin/node ~/PhpstormProjects/panowallpaper/pano-choose.js
+bindsym $mod+p exec ~/.nvm/versions/node/v6.9.1/bin/node ~/PhpstormProjects/panowallpaper/pano-choose.js
 
 # Sign selection
 bindsym $mod+u exec ~/bin/signselection.sh
@@ -327,3 +327,4 @@ bindsym $mod+u exec ~/bin/signselection.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
 exec --no-startup-id nextcloud
+exec --no-startup-id gnome-keyring-daemon
