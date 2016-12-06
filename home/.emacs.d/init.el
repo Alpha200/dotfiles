@@ -7,6 +7,13 @@
 ;;
 ;;; Code:
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (setq inhibit-splash-screen t
@@ -53,6 +60,7 @@
 (require 'init-maps)
 (require 'init-term)
 (require 'init-gtags)
+(require 'init-org)
 
 (use-package helm
   :ensure t
@@ -120,7 +128,7 @@
 (use-package guide-key
   :ensure t
   :config
-  (setq guide-key/guide-key-sequence '("C-x" "C-c p"))
+  (setq guide-key/guide-key-sequence '("C-x" "C-c" "C-c C-x"))
   (guide-key-mode 1))
 
 (use-package pdf-tools
@@ -163,6 +171,9 @@
  '(custom-safe-themes
    (quote
     ("fbcdb6b7890d0ec1708fa21ab08eb0cc16a8b7611bb6517b722eba3891dfc9dd" "8e7ca85479dab486e15e0119f2948ba7ffcaa0ef161b3facb8103fb06f93b428" "6998bd3671091820a6930b52aab30b776faea41449b4246fdce14079b3e7d125" "4ab86c7682db09485a6e046ee0a6c45b5462f514c89844f4ed8b329aa1708067" "fe1682ca8f7a255cf295e76b0361438a21bb657d8846a05d9904872aa2fb86f2" default)))
+ '(package-selected-packages
+   (quote
+    (paper-theme rust-mode ess ember-mode z3-mode editorconfig ansible idea-darkula-theme pdf-tools guide-key helm-dash highlight-symbol emmet-mode yaml-mode swiper company helm-projectile helm bpr gtags evil-magit magit auctex-latexmk use-package powerline-evil fullframe flycheck evil-surround evil-leader evil-indent-textobject)))
  '(safe-local-variable-values (quote ((Tex-engine . luatex)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
