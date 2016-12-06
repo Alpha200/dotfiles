@@ -45,6 +45,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'raichoo/smt-vim'
 Plug 'Konfekt/FastFold'
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
 
 call plug#end()
 
