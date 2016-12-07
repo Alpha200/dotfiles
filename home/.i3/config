@@ -333,3 +333,5 @@ for_window [class="Emacs"] move scratchpad, sticky enable, resize set 1200 800, 
 
 bindsym $mod+z exec --no-startup-id i3-msg scratchpad show && sleep 0.1 && i3-msg resize set 1200 800 && i3-msg move absolute position center 
 exec --no-startup-id emacs ~/notes/todo.org
+
+exec --no-startup-id syncthing-gtk
