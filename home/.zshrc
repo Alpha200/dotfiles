@@ -5,6 +5,7 @@ alias nterm='urxvt -cd $PWD&!'
 alias tp='trash-put'
 alias te='trash-empty'
 alias mktmp='cd $(mktemp -d)'
+alias trans='dict -d eng-deu'
 
 # Skip everything after this line if not interactive
 [[ $- != *i* ]] && return
