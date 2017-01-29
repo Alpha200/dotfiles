@@ -305,7 +305,7 @@ for_window [class="copyq"] floating enable
 exec --no-startup-id copyq
 bindsym $mod+Shift+v exec copyq toggle
 
-exec --no-startup-id srandrd ~/Scripts/autodisplayconfmirrored.sh
+exec --no-startup-id srandrd ~/bin/autodisplayconfmirrored.sh
 
 bindsym $mod+t exec ~/bin/passxdotool.sh
 
