@@ -236,9 +236,9 @@ new_window pixel 0
 #for_window [class="^.*"] border pixel 0
 #new_window pixel 6
 
-# Scrot for screenshots
-bindsym Print exec scrot
-bindsym Mod1+Print exec scrot -s
+# gnome-screenshot for screenshots
+bindsym Print exec gnome-screenshot --interactive
+bindsym $mod+Print exec spectacle
 
 smart_gaps on
 smart_borders on
@@ -283,7 +283,7 @@ mode "$mode_gaps_outer" {
 gaps inner 15
 
 # Desktopbenachrichtigungen
-exec --no-startup-id dunst
+exec --no-startup-id ~/Ext-Projekte/dunst/dunst
 
 for_window[instance="stalonetray"] move absolute position 1845px 25px
 
@@ -335,3 +335,4 @@ bindsym $mod+z exec --no-startup-id i3-msg scratchpad show && sleep 0.1 && i3-ms
 exec --no-startup-id emacs ~/notes/todo.org
 
 exec --no-startup-id syncthing-gtk
+exec --no-startup-id /home/dsendzik/Projekte/playerctlhandler/playerctlhandler
