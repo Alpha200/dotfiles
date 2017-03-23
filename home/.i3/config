@@ -208,8 +208,8 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% && pkill --signal 
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle && pkill --signal RTMIN+1 i3blocks
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 
 # Touchpad controls
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
@@ -224,7 +224,7 @@ bindsym XF86AudioPrev exec playerctl previous
 #exec --no-startup-id "devmon --no-gui"
 
 # Compton
-#exec --no-startup-id compton -b
+exec --no-startup-id compton -b
 
 # Numlock after login
 exec --no-startup-id numlockx on
