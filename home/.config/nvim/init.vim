@@ -47,6 +47,7 @@ Plug 'raichoo/smt-vim'
 Plug 'Konfekt/FastFold'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
