@@ -40,7 +40,7 @@ bindsym $mod+Shift+q kill
 # start dmenu2 (from AUR) with extended configuration
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -r -l 5 -p 'Run >' -x 700 -y 450 -w 520 -h 20 -fn '-*-lemon-*-*-*-*-10-*-*-*-*-*-*-*'"
 
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="rofi -i -dmenu -p '%'" 
+bindsym $mod+d exec --no-startup-id rofi -i -show drun -p '%'
 bindsym $mod+Tab exec --no-startup-id rofi -show window 
 
 # change focus
@@ -99,7 +99,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+a [urgent="latest"] focus
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -232,8 +232,8 @@ exec --no-startup-id numlockx on
 # Caffeine
 exec --no-startup-id caffeine
 
-new_window pixel 0
-#for_window [class="^.*"] border pixel 0
+#new_window pixel 0
+for_window [class="^.*"] border pixel 2
 #new_window pixel 6
 
 # gnome-screenshot for screenshots
@@ -290,11 +290,11 @@ for_window[instance="stalonetray"] move absolute position 1845px 25px
 #exec --no-startup-id /home/dsendzik/.i3blocks/inittray.sh
 
 # class                 border  backgr. text    indicator
-client.focused          #181818 #181818 #f8f8f8 #282828
-client.focused_inactive #383838 #383838 #e8e8e8 #282828
+client.focused          #6ab8e4 #437a9a #f8f8f8 #282828
+client.focused_inactive #6ab8e4 #383838 #e8e8e8 #282828
 client.unfocused        #383838 #383838 #e8e8e8 #282828
 client.urgent           #ab4642 #ab4642 #f8f8f8 #282828
-client.placeholder      #000000 #181818 #f8f8f8 #000000
+client.placeholder      #6ab8e4 #181818 #f8f8f8 #000000
 
 client.background       #181818
 
@@ -323,6 +323,9 @@ bindsym $mod+p exec ~/.nvm/versions/node/v6.9.1/bin/node ~/PhpstormProjects/pano
 
 # Sign selection
 bindsym $mod+u exec ~/bin/signselection.sh
+
+# Message Barnabas
+bindsym $mod+b exec ~/bin/barnabas.sh
 
 exec --no-startup-id nm-applet
 exec --no-startup-id thunderbird
