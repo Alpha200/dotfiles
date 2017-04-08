@@ -5,12 +5,14 @@ alias nterm='urxvt -cd $PWD&!'
 alias tp='trash-put'
 alias te='trash-empty'
 alias mktmp='cd $(mktemp -d)'
-alias trans='dict -d eng-deu'
+alias trans='dict -d eng-deu' 
+
+pless() {
+  pygmentize -f terminal256 -O style=monokai -g $1 | less -r
+}
 
 # Skip everything after this line if not interactive
 [[ $- != *i* ]] && return
-
-#task next
 
 echo
 git --git-dir ~/.homesick/repos/dotfiles/.git --work-tree ~/.homesick/repos/dotfiles status -s
