@@ -1,10 +1,11 @@
 ! urxvt
+URxvt*geometry: 107x53
 
 URxvt.letterSpace: 0
 URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=17:antialias=true,xft:Noto Emoji:pixelsize=9:antialias=false
 URxvt*boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=17:antialias=true,xft:Noto Emoji:pixelsize=9:antialias=false
 URxvt*.scrollBar: false
-URxvt*.saveLines: 3000
+URxvt*.saveLines: 5000
 URxvt*borderless: true
 
 ! disable the stupid ctrl+shift 'feature'
