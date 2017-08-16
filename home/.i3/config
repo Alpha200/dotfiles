@@ -348,3 +348,7 @@ exec --no-startup-id emacs ~/notes/todo.org
 
 exec --no-startup-id syncthing-gtk
 exec --no-startup-id /home/dsendzik/Projekte/playerctlhandler/playerctlhandler
+
+exec --no-startup-id telegram-desktop -startintray
+
+for_window [class="Pinentry"] floating enable
