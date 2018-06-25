@@ -7,6 +7,7 @@ alias te='trash-empty'
 alias mktmp='cd $(mktemp -d)'
 alias trans='dict -d eng-deu' 
 alias enote='cat << END | gpg -e -r Daniel > '
+alias pdfgrep='pdfgrep -in'
 
 pless() {
   pygmentize -f terminal256 -O style=monokai -g $1 | less -r
