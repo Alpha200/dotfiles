@@ -6,4 +6,4 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 #export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh;
-export BROWSER=vivaldi-stable
+export BROWSER=firefox
