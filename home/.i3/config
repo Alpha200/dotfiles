@@ -32,7 +32,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-bindsym $mod+Shift+Return exec vivaldi-stable
+bindsym $mod+Shift+Return exec firefox
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -337,14 +337,14 @@ bindsym $mod+u exec ~/bin/signselection.sh
 bindsym $mod+b exec ~/bin/barnabas.sh
 
 exec --no-startup-id nm-applet
-exec --no-startup-id thunderbird
+# exec --no-startup-id thunderbird
 exec --no-startup-id nextcloud
 exec --no-startup-id gnome-keyring-daemon
 
 for_window [class="Emacs"] move scratchpad, sticky enable, resize set 1200 800, move absolute position center
 
 bindsym $mod+z exec --no-startup-id i3-msg scratchpad show && sleep 0.1 && i3-msg resize set 1200 800 && i3-msg move absolute position center 
-exec --no-startup-id emacs ~/notes/todo.org
+exec --no-startup-id emacs ~/notes/private.org
 
 exec --no-startup-id syncthing-gtk
 exec --no-startup-id /home/dsendzik/Projekte/playerctlhandler/playerctlhandler
