@@ -9,6 +9,7 @@ alias trans='dict -d eng-deu'
 alias enote='cat << END | gpg -e -r Daniel > '
 alias pdfgrep='pdfgrep -in'
 alias open="nautilus . > /dev/null 2>&1 &!"
+alias vim="nvim"
 
 pless() {
   pygmentize -f terminal256 -O style=monokai -g $1 | less -r

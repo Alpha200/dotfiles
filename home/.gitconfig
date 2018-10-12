@@ -2,7 +2,7 @@
   unstage = reset HEAD
 [user]
 	name = Daniel Sendzik
-	email = d.sendzik@gmail.com
+	email = daniel@sendzik.eu
   signingkey = 29FFE0DF
 [push]
 	default = simple
