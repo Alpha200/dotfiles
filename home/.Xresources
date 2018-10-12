@@ -54,7 +54,7 @@ URxvt*shading: 7
 URxvt.perl-ext-common: default,matcher,font-size
 
 ! Clickable URLs
-URxvt.url-launcher: /usr/bin/vivaldi-stable
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 
 ! Variable font-size for presentations
