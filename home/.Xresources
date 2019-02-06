@@ -47,7 +47,7 @@ URxvt.iso14755_52: false
 *.color7: #CCCCC6
 *.color15: #F8F8F2
 
-URxvt*transparent: true
+URxvt*transparent: false
 URxvt*shading: 7
 
 ! Extensions

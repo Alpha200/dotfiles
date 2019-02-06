@@ -5,8 +5,8 @@ rofi.font: Source\ Code\ Pro 13
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #181818, #181818, #181818
-rofi.color-normal: #181818, #fbfdfd, #181818, #585858, #fbfdfd
+rofi.color-window: #1B1B1B, #1B1B1B, #1B1B1B
+rofi.color-normal: #1B1B1B, #fbfdfd, #1B1B1B, #585858, #fbfdfd
 rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
 rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
 rofi.show-icons: true
