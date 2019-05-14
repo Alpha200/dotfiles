@@ -341,7 +341,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id nextcloud
 exec --no-startup-id gnome-keyring-daemon
 
-for_window [class="Emacs"] move scratchpad, sticky enable, resize set 1200 800, move absolute position center
+#for_window [class="Emacs"] move scratchpad, sticky enable, resize set 1200 800, move absolute position center
 
 bindsym $mod+z exec --no-startup-id i3-msg scratchpad show && sleep 0.1 && i3-msg resize set 1200 800 && i3-msg move absolute position center 
 #exec --no-startup-id emacs ~/notes/private.org
