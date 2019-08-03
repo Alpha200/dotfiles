@@ -181,11 +181,11 @@ bindsym $mod+m mode "move"
 bar {
   position top
   colors {
-    background #252525
+    background #1B1B1B
 
-    active_workspace   #252525 #252525 #888888
-    focused_workspace  #252525 #252525 #eeeeee
-    inactive_workspace #252525 #252525 #888888
+    active_workspace   #1B1B1B #1B1B1B #888888
+    focused_workspace  #1B1B1B #1B1B1B #eeeeee
+    inactive_workspace #1B1B1B #1B1B1B #888888
   }
   status_command i3blocks -c ~/.i3blocks/i3blocks.conf
   font pango: roboto, Noto Sans, FontAwesome 12
@@ -241,7 +241,7 @@ exec --no-startup-id numlockx on
 exec --no-startup-id caffeine
 
 #new_window pixel 0
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 #new_window pixel 6
 
 # gnome-screenshot for screenshots
@@ -299,12 +299,12 @@ for_window[instance="stalonetray"] move absolute position 1845px 25px
 
 # class                 border  backgr. text    indicator
 client.focused          #6ab8e4 #437a9a #f8f8f8 #282828
-client.focused_inactive #6ab8e4 #383838 #e8e8e8 #282828
-client.unfocused        #383838 #383838 #e8e8e8 #282828
+client.focused_inactive #1B1B1B #1B1B1B #e8e8e8 #282828
+client.unfocused        #1B1B1B #1B1B1B #e8e8e8 #282828
 client.urgent           #ab4642 #ab4642 #f8f8f8 #282828
-client.placeholder      #6ab8e4 #181818 #f8f8f8 #000000
+client.placeholder      #6ab8e4 #1B1B1B #f8f8f8 #000000
 
-client.background       #181818
+client.background       #1B1B1B
 
 #for_window [class="Zeal"] floating enable
 #bindsym $mod+z exec zeal
@@ -341,10 +341,10 @@ exec --no-startup-id nm-applet
 exec --no-startup-id nextcloud
 exec --no-startup-id gnome-keyring-daemon
 
-for_window [class="Emacs"] move scratchpad, sticky enable, resize set 1200 800, move absolute position center
+#for_window [class="Emacs"] move scratchpad, sticky enable, resize set 1200 800, move absolute position center
 
 bindsym $mod+z exec --no-startup-id i3-msg scratchpad show && sleep 0.1 && i3-msg resize set 1200 800 && i3-msg move absolute position center 
-exec --no-startup-id emacs ~/notes/private.org
+#exec --no-startup-id emacs ~/notes/private.org
 
 exec --no-startup-id syncthing-gtk
 exec --no-startup-id /home/dsendzik/Projekte/playerctlhandler/playerctlhandler

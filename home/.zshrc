@@ -7,6 +7,7 @@ alias mktmp='cd $(mktemp -d)'
 alias pdfgrep='pdfgrep -in'
 alias open="nautilus . > /dev/null 2>&1 &!"
 alias vim="nvim"
+alias ssh="TERM=xterm ssh"
 
 pless() {
   pygmentize -f terminal256 -O style=monokai -g $1 | less -r
