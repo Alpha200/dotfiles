@@ -196,7 +196,7 @@ bar {
 # Disable monitor after 120 sec idle
 exec --no-startup-id xset dpms 120
 # Start i3lock after suspend, monitor off, ...
-exec --no-startup-id xss-lock -- i3lock-fancy -- scrot -z & 
+exec --no-startup-id xss-lock -- i3lock-fancy
 # Set Wallpaper
 exec --no-startup-id ~/.fehbg
 # Lock session with Win+y
