@@ -1,5 +1,5 @@
-export GOPATH=~/.go
-export PATH="/home/dsendzik/.go/bin:$PATH"
+export GOPATH=~/go
+export PATH="/home/dsendzik/go/bin:$PATH"
 export ANDROID_HOME=${HOME}/Android/Sdk
 export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
 export PATH=${PATH}:${ANDROID_HOME}/tools

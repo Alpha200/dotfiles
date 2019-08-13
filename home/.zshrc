@@ -1,12 +1,9 @@
-source /usr/share/nvm/init-nvm.sh
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 alias nterm='urxvt -cd $PWD&!'
 alias tp='trash-put'
 alias te='trash-empty'
 alias mktmp='cd $(mktemp -d)'
-alias trans='dict -d eng-deu' 
-alias enote='cat << END | gpg -e -r Daniel > '
 alias pdfgrep='pdfgrep -in'
 alias open="nautilus . > /dev/null 2>&1 &!"
 alias vim="nvim"
