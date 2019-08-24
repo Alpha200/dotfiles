@@ -196,7 +196,7 @@ bar {
 # Disable monitor after 120 sec idle
 exec --no-startup-id xset dpms 120
 # Start i3lock after suspend, monitor off, ...
-exec --no-startup-id xss-lock -- i3lock-fancy
+exec --no-startup-id xss-lock -- ~/bin/scrlock.sh
 # Set Wallpaper
 exec --no-startup-id ~/.fehbg
 # Lock session with Win+y
@@ -346,7 +346,7 @@ exec --no-startup-id gnome-keyring-daemon
 bindsym $mod+z exec --no-startup-id i3-msg scratchpad show && sleep 0.1 && i3-msg resize set 1200 800 && i3-msg move absolute position center 
 #exec --no-startup-id emacs ~/notes/private.org
 
-exec --no-startup-id syncthing-gtk
+#exec --no-startup-id syncthing-gtk
 exec --no-startup-id /home/dsendzik/Projekte/playerctlhandler/playerctlhandler
 
 exec --no-startup-id telegram-desktop -startintray
