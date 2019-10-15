@@ -1,9 +1,9 @@
 ! urxvt
 URxvt*geometry: 107x53
 
+URxvt*font: xft:Inconsolata Nerd Font:pixelsize=17:antialias=True:autohint=True:minspace=True,xft:Inconsolata Nerd Font Mono:pixelsize=19:antialias=False
+URxvt*boldFont: xft:Inconsolata Nerd Font:pixelsize=17:antialias=True:autohint=True:minspace=True,xft:Inconsolata Nerd Font Mono:pixelsize=19:antialias=False
 URxvt.letterSpace: 0
-URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=17:antialias=true,xft:Noto Emoji:pixelsize=9:antialias=false
-URxvt*boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=17:antialias=true,xft:Noto Emoji:pixelsize=9:antialias=false
 URxvt*.scrollBar: false
 URxvt*.saveLines: 5000
 URxvt*borderless: true
@@ -47,8 +47,8 @@ URxvt.iso14755_52: false
 *.color7: #CCCCC6
 *.color15: #F8F8F2
 
-URxvt*transparent: false
-URxvt*shading: 7
+URxvt*transparent: true
+URxvt*shading: 5
 
 ! Extensions
 URxvt.perl-ext-common: default,matcher,font-size
