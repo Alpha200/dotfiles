@@ -9,3 +9,4 @@ export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh;
 export BROWSER=firefox
 export PATH="$HOME/esp/xtensa-esp32-elf/bin:$PATH"
 export IDF_PATH="$HOME/esp/esp-idf"
+export PATH="$HOME/.local/bin:$PATH"
