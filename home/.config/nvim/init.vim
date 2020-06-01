@@ -48,6 +48,7 @@ Plug 'Konfekt/FastFold'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
 Plug 'airblade/vim-gitgutter'
+Plug 'pearofducks/ansible-vim'
 
 call plug#end()
 
