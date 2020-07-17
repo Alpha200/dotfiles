@@ -36,6 +36,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'w0ng/vim-hybrid'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'Shougo/deoplete.nvim'
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+"Plug 'davidhalter/jedi-vim'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
