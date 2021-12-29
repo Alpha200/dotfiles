@@ -1,5 +1,6 @@
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source /opt/kube-ps1/kube-ps1.sh
+source ~/.kubectl_aliases
 
 alias nterm='urxvt -cd $PWD&!'
 alias tp='trash-put'
